@@ -1,0 +1,3 @@
+C:/Users/markt/source/repos/ELTE-korszam1-2022/Korszam1/out/build/x64-debug/CMakeFiles/Korszam1.dir
+C:/Users/markt/source/repos/ELTE-korszam1-2022/Korszam1/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/markt/source/repos/ELTE-korszam1-2022/Korszam1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
