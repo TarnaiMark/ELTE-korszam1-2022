@@ -1,0 +1,3 @@
+/workspaces/ELTE-korszam1-2022/build/CMakeFiles/rebuild_cache.dir
+/workspaces/ELTE-korszam1-2022/build/CMakeFiles/edit_cache.dir
+/workspaces/ELTE-korszam1-2022/build/CMakeFiles/Korszam1.dir

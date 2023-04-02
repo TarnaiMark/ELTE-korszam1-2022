@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Korszam1.dir/Korszam1.cpp.o  -o Korszam1 

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/ELTE-korszam1-2022/build",
+  "command": "/usr/bin/g++    -g   -std=gnu++2a -o CMakeFiles/Korszam1.dir/Korszam1.cpp.o -c /workspaces/ELTE-korszam1-2022/Korszam1/Korszam1.cpp",
+  "file": "/workspaces/ELTE-korszam1-2022/Korszam1/Korszam1.cpp"
+}
+]
