@@ -3,6 +3,7 @@
 
 #include "Korszam1.h"
 
+
 using namespace std;
 
 
@@ -24,5 +25,12 @@ T integrate(F f, H g ,int n, T x0, T x1)
 int main()
 {
 	double res = integrate( sq<double>, lin<double> ,1000, 0.0, 1.0);
-	cout << res << endl;
+	
+	Vector2d v1{}, v2{};
+	std::cout <<"Enter vector 1:\n";
+	std::cin >>v1;
+	std::cout <<"Enter vector 2:\n";
+	std::cin >>v2;
+	std::cout<<"The sum of the two vectors is:\n"<<v1+v2;
+	return 0;
 }

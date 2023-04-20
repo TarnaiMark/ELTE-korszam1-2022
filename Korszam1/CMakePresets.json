@@ -1,4 +1,4 @@
-﻿{
+{
     "version": 3,
     "configurePresets": [
         {
@@ -56,6 +56,16 @@
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
+        },
+        {
+            "name": "cplusplus",
+            "description": "",
+            "displayName": "",
+            "inherits": [
+                "windows-base",
+                "x64-debug",
+                "x64-release"
+            ]
         }
     ]
 }

@@ -4,5 +4,7 @@
 #pragma once
 
 #include <iostream>
+#include <cmath>
+#include "vector2.h"
 
 // TODO: Reference additional headers your program requires here.
