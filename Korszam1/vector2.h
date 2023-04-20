@@ -1,6 +1,7 @@
 
-struct Vector2d
+class Vector2d
 {
+    public:
     double x, y;
     Vector2d &operator+=(Vector2d const &v)
     {
@@ -26,52 +27,44 @@ struct Vector2d
         y = y / f;
         return *this;
     }
+    Vector2d operator+( Vector2d const &b)
+    {
+        return Vector2d{x + b.x, y + b.y};
+    }
+    Vector2d operator*( float b)
+    {
+    return Vector2d{x * b, x * b};
+    }
+    Vector2d operator-( Vector2d const &b)
+    {
+        return Vector2d{x - b.x, y - b.y};
+    }
+    Vector2d operator/( float b)
+    {
+        return Vector2d{x / b, y / b};
+    }
+    double length()
+    {
+     
+     return sqrt(pow(x, 2) + pow(y, 2));
+    }
+   Vector2d normalize()
+    {
+    
+        return Vector2d{x / length(), y / length()};
+    }
+    double dot(Vector2d const& u)
+    {
+        return x * u.x + y * u.y;
+    }
+    double sqlength()
+    {
+    return x * x + y * y;
+    }
 };
-Vector2d operator+(Vector2d const &a, Vector2d const &b)
-{
-    return Vector2d{a.x + b.x, a.y + b.y};
-}
 
-Vector2d operator*(Vector2d const &a, float b)
-{
-    return Vector2d{a.x * b, a.y * b};
-}
 
-Vector2d operator*(float b, Vector2d const &a)
-{
-    return Vector2d{a.x * b, a.y * b};
-}
 
-Vector2d operator/(Vector2d const &a, float b)
-{
-    return Vector2d{a.x / b, a.y / b};
-}
-
-double length(Vector2d const &v)
-{
-    float vx = v.x;
-    float vy = v.y;
-    return sqrt(pow(vx, 2) + pow(vy, 2));
-}
-
-Vector2d normalize(Vector2d const &v)
-{
-    float vx = v.x;
-    float vy = v.y;
-    float l = length(v);
-    return Vector2d{vx / l, vy / l};
-}
-
-double dot(Vector2d const &v, Vector2d const &u)
-
-{
-    return v.x * u.x + v.y * u.y;
-}
-
-double sqlength(Vector2d const &v)
-{
-    return v.x * v.x + v.y * v.y;
-}
 
 std::ostream &operator<<(std::ostream &o, Vector2d const &v)
 {
