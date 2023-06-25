@@ -9,7 +9,10 @@
 #include <stdexcept>
 #include "vector2.h"
 #include "matrix.h"
-using namespace std;
+#include <fstream>
+#include <string>
+
+
 
 
 template<typename K> K sq(K x){ return x*x; }
